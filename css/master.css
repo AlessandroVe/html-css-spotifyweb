@@ -1,0 +1,29 @@
+
+/* master-container */
+#master-container{
+    height: 100vh;
+    border: 5px solid black;
+    flex-direction: column;
+    display: flex;
+}
+/* MASTER-CONTAINER ///MAIN */
+#master-container>main{
+        flex-grow: 1;    
+        align-items: stretch;      
+}
+#side-bar{
+    background-color: blueviolet;
+}
+#container-items{
+    display: flex;
+    flex-direction: column;
+}
+/*  */
+/* MASTER-CONTAINER ///fOOTER */
+#master-container>footer{
+       flex-basis: 90px;
+       background-color: rgb(31, 29, 29);
+}
+
+/*  */
+/*  */
