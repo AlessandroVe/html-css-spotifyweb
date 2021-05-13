@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/framework.css">
     <link rel="stylesheet" href="./css/master.css">
@@ -29,7 +30,13 @@
                     <li> Nome playlist</li>
                     <li> Nome playlist</li>
                 </ul>
-                <div id="specs-user"></div>
+                <div id="specs-user">
+                    <ul>
+                        <li>Installa app</li>
+                        <li><hr></li>
+                        <li><img src="./img/profile.svg" alt=""><b> John Doe</b></li>
+                    </ul>
+                </div>
             </div>
             <div id="container-items" class="col-xs-10">
                 <div id="container-items-top">
@@ -38,7 +45,7 @@
                 <div id="container-items-bottom">
                     <nav> 
                         <ul>
-                            <li><a href=""> IN EVIDENZA</a></li>
+                            <li><a href="#recently-played-album"> RECENTLY PLAYED</a></li>
                             <li><a href=""> PODCAST</a></li>
                             <li><a href=""> CLASSIFICHE</a></li>
                             <li><a href=""> GENIRI E MOOD</a></li>
@@ -46,21 +53,78 @@
                             <li><a href=""> SCOPRI</a></li>
                         </ul>
                     </nav>
-                    <div id="container-album">
-                        <h2>Recently played</h2>
-                        <div id="Recently-played-album">
-                            <section id="">f</section>
-                            <section id="">f</section>
-                            <section id="">f</section>
-                            <section id="">f</section>
-                            <section id="">f</section>
-                            <section id="">f</section>
+                    <div id="container-albums">
+                        <h1 class="title-album">Recently played</h1>
+                        <div id="recently-played-album">
+                            <section id="heavy-metal">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                            <section id="stranger-things">
+                                <img src="./img/stranger.jpeg" alt="">
+                                <h3>Stranger Thimgs, Vol.1(a Netflix Original Series Soundtrack)</h3>
+                                <span class="subtitle">Kyle Dixon & Michael
+                                    <br>
+                                    <br>
+                                    stein
+                                </span>
+                            </section>
+                            <section id="a-quiet-place">
+                                <img src="./img/aquietplace.jpeg" alt="">
+                                <h3>A quiet place</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                            <section id="split">
+                                <img src="./img/split.jpeg" alt="">
+                                <h3>Split</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                            <section id="wellness">
+                                <img src="./img/cure.jpeg" alt="">
+                                <h3>A cure for wellness</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                            <section id="sinister">
+                                <img src="./img/sinister.jpeg" alt="">
+                                <h3>Sinister</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                        </div>
+                        <h1 class="title-album">Creato per John Doe</h1>
+                        <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+                        <div id="made-for-john-album">
+                            <section id="release-radar">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                            <section id="daily-mix-1">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="row"></footer>
+        <footer class="row">
+            <div id="song-viewer"class="col-xs-2 ">
+                <div id="song-specs">
+                    <img src="./img/sinister.jpeg" alt="">
+                    <h4>Sinister</h4>
+                    <span class="subtitle">Brano nome</span>
+                </div>
+                <div id="song-icon">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <div id="song-plotter"class="col-xs-4 "></div>
+            <div id="volume-plotter"class="col-xs-2"></div>
+        </footer>
     </div>
     
 </body>
