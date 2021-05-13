@@ -119,13 +119,21 @@
 }
 /* CONTAINER-ALBUM */
 #container-album{
+    margin-top: 15px;
     flex-grow: 1;
     color: white;
 }
-#first-album{
-    margin-top: 15px;
+#Recently-played-album{
     height: 500px;
     border: 1px solid white;
+    display: flex;
+    align-items: stretch;
+}
+#Recently-played-album>select{
+   flex-grow:1;
+   border: 1px solid white;
+   
+
 }
 /*  */
 /*  */
