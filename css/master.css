@@ -120,8 +120,10 @@
 /* CONTAINER-ALBUM */
 #container-album{
     flex-grow: 1;
+    color: white;
 }
 #first-album{
+    margin-top: 15px;
     height: 500px;
     border: 1px solid white;
 }
@@ -129,12 +131,12 @@
 /*  */
 /* MASTER-CONTAINER ///fOOTER */
 #master-container>footer{
-       position: fixed; 
-       bottom: 0;
-       width: 100%;
-       height: 90px;
-       background-color: rgb(31, 29, 29);
-       z-index: 1025;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(31, 29, 29);
+    z-index: 1025;
 }
 /*  */
 /*  */
