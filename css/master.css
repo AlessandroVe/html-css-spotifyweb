@@ -93,6 +93,8 @@
 }
 /* MASTER-CONTAINER ///MAIN// CONTAINER-ITEMS/// CONTAINER-ITEMS-BOTTOM */
 #container-items-bottom{
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - 90px);
     overflow-y: scroll;
     background-color: rgb(17, 14, 41);
@@ -100,7 +102,6 @@
 #container-items-bottom>nav{
     display: flex;
     margin-top: 80px;
-    height: 80px;
     justify-content: center;
 }
 #container-items-bottom>nav ul{
@@ -117,7 +118,13 @@
     text-decoration: none;
 }
 /* CONTAINER-ALBUM */
-#first-album
+#container-album{
+    flex-grow: 1;
+}
+#first-album{
+    height: 500px;
+    border: 1px solid white;
+}
 /*  */
 /*  */
 /* MASTER-CONTAINER ///fOOTER */
