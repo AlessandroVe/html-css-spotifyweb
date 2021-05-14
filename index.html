@@ -48,7 +48,7 @@
                             <li><a href="#recently-played-album"> RECENTLY PLAYED</a></li>
                             <li><a href=""> PODCAST</a></li>
                             <li><a href=""> CLASSIFICHE</a></li>
-                            <li><a href=""> GENIRI E MOOD</a></li>
+                            <li><a href=""> GENERI E MOOD</a></li>
                             <li><a href=""> NUOVE USCITE</a></li>
                             <li><a href=""> SCOPRI</a></li>
                         </ul>
@@ -56,12 +56,12 @@
                     <div id="container-albums">
                         <h1 class="title-album">Recently played</h1>
                         <div id="recently-played-album">
-                            <section id="heavy-metal">
+                            <section id="heavy-metal" class="col-xs-2">
                                 <img src="./img/metal_lifting.jpg" alt="">
                                 <h3>Heavy Metal</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
-                            <section id="stranger-things">
+                            <section id="stranger-things" class="col-xs-2">
                                 <img src="./img/stranger.jpeg" alt="">
                                 <h3>Stranger Thimgs, Vol.1(a Netflix Original Series Soundtrack)</h3>
                                 <span class="subtitle">Kyle Dixon & Michael
@@ -70,22 +70,22 @@
                                     stein
                                 </span>
                             </section>
-                            <section id="a-quiet-place">
+                            <section id="a-quiet-place" class="col-xs-2">
                                 <img src="./img/aquietplace.jpeg" alt="">
                                 <h3>A quiet place</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
-                            <section id="split">
+                            <section id="split" class="col-xs-2">
                                 <img src="./img/split.jpeg" alt="">
                                 <h3>Split</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
-                            <section id="wellness">
+                            <section id="wellness" class="col-xs-2">
                                 <img src="./img/cure.jpeg" alt="">
                                 <h3>A cure for wellness</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
-                            <section id="sinister">
+                            <section id="sinister" class="col-xs-2">
                                 <img src="./img/sinister.jpeg" alt="">
                                 <h3>Sinister</h3>
                                 <span class="subtitle">subtitle</span>
@@ -94,26 +94,43 @@
                         <h1 class="title-album">Creato per John Doe</h1>
                         <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
                         <div id="made-for-john-album">
-                            <section id="release-radar">
-                                <img src="./img/metal_lifting.jpg" alt="">
+                            <section id="release-radar" class="col-xs-2">
+                                <img src="./img/radar.jpeg" alt="">
                                 <h3>Heavy Metal</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
-                            <section id="daily-mix-1">
-                                <img src="./img/metal_lifting.jpg" alt="">
+                            <section id="daily-mix-1" class="col-xs-2">
+                                <img src="./img/mixdaily.jpeg" alt="">
                                 <h3>Heavy Metal</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
 
                         </div>
+                        <h1 class="title-album">Artisti piu' popolari</h1>
+                        <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+                        <div id="most-famous-artists-album">
+                            <section id="lana-del-rey" class="col-xs-2">
+                                <img src="./img/radar.jpeg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                            <section id="ludovico-einaudi" class="col-xs-2">
+                                <img src="./img/radar.jpeg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <span class="subtitle">subtitle</span>
+                            </section>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="row">
-            <div id="song-viewer"class="col-xs-2 ">
-                <div id="song-specs">
+        <footer >
+            <div id="song-viewer">
+                <div id="song-viewer-cover">
                     <img src="./img/sinister.jpeg" alt="">
+                </div>
+                <div id="song-specs">
                     <h4>Sinister</h4>
                     <span class="subtitle">Brano nome</span>
                 </div>
@@ -122,8 +139,34 @@
                     <i class="far fa-folder"></i>
                 </div>
             </div>
-            <div id="song-plotter"class="col-xs-4 "></div>
-            <div id="volume-plotter"class="col-xs-2"></div>
+            <div id="song-plotter">
+                <div id="nav-tracker">
+                    <ul>
+                        <li><i class="fas fa-random"></i></li>
+                        <li><i class="fas fa-step-backward"></i></li>
+                        <li><i style="font-size: 30px;" class="far fa-play-circle"></i></li>
+                        <li><i class="fas fa-step-forward"></i></li>
+                        <li><i class="fas fa-redo-alt"></i></li>
+                    </ul>
+                </div>
+                <div id="plotter-bar">
+                    <div class="timer">0:25</div>                    
+                    <div></div>
+                    <div></div>
+                    <div class="timer">4:25</div>
+                </div>
+            </div>
+            <div id="volume-plotter">
+                <div id="volume-plotter-icons">
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div id="volume-plotter-bar">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </footer>
     </div>
     
