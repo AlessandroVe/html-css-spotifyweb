@@ -144,9 +144,8 @@
 }
 /*  */
 /* MASTER-CONTAINER ///MAIN// CONTAINER-ITEMS TOP(:HOVER ZONE) */
-#container-items-top>a:hover{
-    padding: 20px;
-    font-size: 20px;
+#container-items-top>a:hover{  
+    font-size: 18px;
 }
 /*  */
 /* MASTER-CONTAINER ///MAIN// CONTAINER-ITEMS/// CONTAINER-ITEMS-BOTTOM */
