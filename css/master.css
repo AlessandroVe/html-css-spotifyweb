@@ -208,12 +208,22 @@
     flex-grow: 1;
     color: white;
 }
+#container-albums section .cover{
+    position: relative;
+}
+#container-albums #play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    display: none;
+}
 .title-album{
     margin-left: 30px;
     margin-bottom: 30px;
 }
-.title-album~span{
-    margin-left: 30px;
+.title-album h1~span{
     color: grey;
 }
 #recently-played-album , #made-for-john-album ,#most-famous-artists-album{
@@ -226,8 +236,15 @@
    padding: 0px 7px ;
    padding-bottom: 15px;
 }
-#recently-played-album>section>img , #made-for-john-album>section>img , #most-famous-artists-album>section>img{
+#recently-played-album>section img , #made-for-john-album>section img , #most-famous-artists-album>section img{
     width: 100%;
+}
+/* CONTAINER-ALBUM (HOVER) */
+#container-albums section .cover:hover img{
+    filter: opacity(0.5);
+}
+#container-albums section .cover:hover #play{
+    display: block;
 }
 /*  */
 /*  */
@@ -285,19 +302,40 @@ footer{
     display: flex;
     justify-content: center;
 }
-#plotter-bar>div:nth-child(2){
-    flex-basis: 20%;
-    border-top: 2px solid white;
+#bar{
+    width: 50%;
+    display: flex;
+    position: relative;
 }
-#plotter-bar>div:nth-child(3){
-    flex-basis: 50%;
-    border-top: 2px solid grey;
+.ball-bar{
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    border-radius: 15px;
+    position: absolute;
+    left: 18%;
+    transform: translate(0, -40%);
+    display: none;
+}
+#left-bar{
+    flex-basis: 20%;
+    border-top: 3px solid white;
+}
+#plotter-bar>#bar div:nth-child(3){
+    flex-basis: 80%;
+    border-top: 3px solid grey;
 }
 .timer{
     margin: 3px;
     font-size: 12px;
 }
 /* /* MASTER-CONTAINER ///fOOTER /// song-plotter (HOVER) */
+#bar:hover .ball-bar{
+    display: block;
+}
+#bar:hover #left-bar{
+    border-top: 3px solid greenyellow;
+}
 /*  */
 /* MASTER-CONTAINER ///fOOTER /// volume-plotter */
 #volume-plotter{
@@ -308,21 +346,32 @@ footer{
 #volume-plotter-icons{
     display: flex;
     width: 30%;
+    padding-bottom: 10px;
 }
 #volume-plotter-icons>i{
     font-size: 12px;
     margin: 0 5px;
 }
 #volume-plotter-bar{
+    position: relative;
     display: flex;
     width: 70%;
+    padding-bottom: 10px;
 }
-#volume-plotter-bar>div:nth-child(1){
+#left-bar-volume{
     flex-basis: 20%;
-    border-top: 2px solid white;
+    border-top: 3px solid white;
 }
 #volume-plotter-bar>div:nth-child(2){
     flex-basis: 70%;
-    border-top: 2px solid grey;
+    border-top: 3px solid grey;
 }
+
+/* MASTER-CONTAINER ///fOOTER /// volume-plotter (HOVER)*/
+ #volume-plotter-bar:hover .ball-bar{
+     display: block;
+ }
+ #volume-plotter-bar:hover #left-bar-volume{
+    border-top: 2px solid greenyellow;
+ }
 /*  */

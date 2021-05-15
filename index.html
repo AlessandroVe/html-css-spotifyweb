@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.scdn.co/i/_global/twitter_card-default.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/framework.css">
     <link rel="stylesheet" href="./css/master.css">
-    <title>Start Spotify</title>
+    <title>Spotify</title>
 </head>
 <body>
     <div id="master-container" class="container-fluid">
@@ -59,15 +60,25 @@
                         </ul>
                     </nav>
                     <div id="container-albums">
-                        <h1 class="title-album">Recently played</h1>
+                        <main class="title-album">
+                            <h1 >Recently played</h1>
+                        </main>
                         <div id="recently-played-album">
+
                             <section id="heavy-metal" class="col-xs-2">
-                                <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="cover">
+                                    <img src="./img/metal_lifting.jpg" alt="">
+                                    <i id="play" class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Heavy Metal</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
+
                             <section id="stranger-things" class="col-xs-2">
-                                <img src="./img/stranger.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/stranger.jpeg" alt="">
+                                    <i id="play" class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Stranger Thimgs, Vol.1(a Netflix Original Series Soundtrack)</h3>
                                 <span class="subtitle">Kyle Dixon & Michael
                                     <br>
@@ -75,50 +86,89 @@
                                     stein
                                 </span>
                             </section>
+
                             <section id="a-quiet-place" class="col-xs-2">
-                                <img src="./img/aquietplace.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/aquietplace.jpeg" alt="">
+                                    <i id="play"class="far fa-play-circle"></i>
+                                </div>
                                 <h3>A quiet place</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
+
                             <section id="split" class="col-xs-2">
-                                <img src="./img/split.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/split.jpeg" alt="">
+                                    <i id="play"class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Split</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
+
                             <section id="wellness" class="col-xs-2">
-                                <img src="./img/cure.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/cure.jpeg" alt="">
+                                    <i id="play"class="far fa-play-circle"></i>
+                                </div>
                                 <h3>A cure for wellness</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
+
                             <section id="sinister" class="col-xs-2">
-                                <img src="./img/sinister.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/sinister.jpeg" alt="">
+                                    <i id="play"class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Sinister</h3>
                                 <span class="subtitle">subtitle</span>
                             </section>
                         </div>
-                        <h1 class="title-album">Creato per John Doe</h1>
-                        <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+
+                        <main class="title-album">
+                            <h1 >Creato per John Doe</h1>
+                            <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+                        </main>
                         <div id="made-for-john-album">
+
                             <section id="release-radar" class="col-xs-2">
-                                <img src="./img/radar.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/radar.jpeg" alt="">
+                                    <i id="play" class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Release Radar</h3>
                             </section>
+
                             <section id="daily-mix-1" class="col-xs-2">
-                                <img src="./img/mixdaily.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <i id="play" class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Daily Mix</h3>
                             </section>
                         </div>
-                        <h1 class="title-album">Artisti piu' popolari</h1>
-                        <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>
+
+                        <main class="title-album">
+                            <h1 >Artisti piu' popolari</h1>
+                            <span>Piu' ascolti, piu' accurati saranno i suggerimenti</span>                            
+                        </main>
                         <div id="most-famous-artists-album">
+
                             <section id="lana-del-rey" class="col-xs-2">
-                                <img src="./img/youg.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/youg.jpeg" alt="">
+                                    <i id="play"class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Luna del Rey</h3>
                             </section>
+
                             <section id="ludovico-einaudi" class="col-xs-2">
-                                <img src="./img/einaudi.jpeg" alt="">
+                                <div class="cover">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <i id="play"class="far fa-play-circle"></i>
+                                </div>
                                 <h3>Ludovico Einaudi</h3>
                             </section>
+
                         </div>
 
                     </div>
@@ -150,10 +200,12 @@
                     </ul>
                 </div>
                 <div id="plotter-bar">
-                    <div class="timer">0:25</div>   
-                    <div></div>                 
-                    <div></div>
-                    <div></div>
+                    <div class="timer">0:25</div>  
+                    <div id="bar">
+                        <div class="ball-bar"></div>                 
+                        <div id="left-bar"></div>
+                        <div></div>
+                    </div> 
                     <div class="timer">4:25</div>
                 </div>
             </div>
@@ -164,8 +216,9 @@
                     <i class="fas fa-volume-up"></i>
                 </div>
                 <div id="volume-plotter-bar">
+                    <div id="left-bar-volume"></div>
                     <div></div>
-                    <div></div>
+                    <div class="ball-bar"></div>
                 </div>
             </div>
         </footer>
