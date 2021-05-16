@@ -228,12 +228,13 @@
 #recently-played-album , #made-for-john-album ,#most-famous-artists-album{
     margin-top: 15px;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;  
 }
 #recently-played-album>section , #made-for-john-album>section , #most-famous-artists-album>section{
    text-align: center;
    padding: 0px 7px ;
    padding-bottom: 15px;
+   transition: all .5s linear 0s; 
 }
 #recently-played-album>section img , #made-for-john-album>section img , #most-famous-artists-album>section img{
     width: 100%;
