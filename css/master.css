@@ -1,6 +1,6 @@
  /* UTILITY */
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .subtitle{
     display: inline-block;
@@ -240,10 +240,10 @@
     width: 100%;
 }
 /* CONTAINER-ALBUM (HOVER) */
-#container-albums section .cover:hover img{
+#container-albums section:hover img{
     filter: opacity(0.5);
 }
-#container-albums section .cover:hover #play{
+#container-albums section:hover #play{
     display: block;
 }
 /*  */
