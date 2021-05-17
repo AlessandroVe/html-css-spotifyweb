@@ -62,9 +62,6 @@
 #first-list li:nth-child(3) div{
     background-image: url(../img/libreria.svg);
 }
-#second-list{
-    height: 70%;
-}
 #second-list li{
     margin-top: 15px;
 }
