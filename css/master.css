@@ -22,14 +22,14 @@
 /* MASTER-CONTAINER ///MAIN */
 #master-container>main{
     flex-basis: calc(100vh - 90px);    
-    align-items: stretch;      
+    align-items: stretch;   
+    overflow: hidden;
 }
 /* MASTER-CONTAINER ///MAIN// SIDE-BAR */
 #side-bar{
     padding: 15px;
     background-color: rgb(17, 17, 17);
     position: relative;
-
 }
 #logo{
     height: 80px;
